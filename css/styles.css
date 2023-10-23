@@ -331,6 +331,10 @@ template {
 /* =============
     Base
 ============= */
+#validation-logo {
+  margin-top: 60px;
+}
+
 /* =============
     Typography
 ============= */
