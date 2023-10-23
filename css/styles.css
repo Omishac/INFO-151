@@ -344,11 +344,13 @@ body {
 h1, h2, h3, h4.h5 {
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 p {
   padding: 0;
   margin: 0;
+  color: white;
 }
 
 ul {
@@ -359,6 +361,13 @@ ul {
 /* =============
     Buttons
 ============= */
+.blue-btn {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
 /* =============
     Forms
 ============= */
@@ -385,9 +394,19 @@ textarea {
 /* =============
     Header
 ============= */
+header nav ul #trial a {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
 /* =============
     Footer
 ============= */
 /* =============
     Hero
 ============= */
+#hero {
+  padding-top: 78px;
+}
