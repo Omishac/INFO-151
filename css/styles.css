@@ -392,8 +392,15 @@ textarea {
 ============= */
 footer {
   background-color: var(--black);
-  padding: 30px 0px;
+  padding: 30px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-footer section h2 {
-  margin-bottom: 20px;
+footer .footer {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-right: 200px;
 }

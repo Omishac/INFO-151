@@ -3,10 +3,17 @@
 ============= */
 footer{
    background-color: var(--black);
-   padding: 30px 0px;
-   section{
-    h2{
-        margin-bottom: 20px;
+   padding: 30px 15px;
+   display: flex;
+   
+    .footer{
+        flex-direction: row;
+        margin-right: 200px;
+    }
+   ul{
+    li{
+       
     }
    }
+   
 }
