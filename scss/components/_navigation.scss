@@ -1,3 +1,47 @@
 /* =============
     Navigation
 ============= */
+a{
+    text-decoration: none;
+}
+
+nav{
+    
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        li{
+            list-style: none;
+            margin-left: 25px;
+            justify-content: center;
+            a:link,a:visited{
+                color: var(--white);
+                font-size: rem-calc(14);
+                font-weight: 600;
+                transition: 0.25s;
+            }
+            a:hover,a:active{
+                color: #44B4EE;
+                text-decoration: underline;
+            }
+        
+        }
+        #trial{
+            margin-left: auto;
+            padding: 13px 2px;
+            border-radius: 6px;
+            transition: 0.25s;
+
+        }
+
+        #trial:hover{
+            color: white;
+            background-color: #23526a;
+        }
+
+        #selected{
+            color: #44B4EE;
+        }
+
+      } 
+    } 

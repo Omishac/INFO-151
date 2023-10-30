@@ -15,7 +15,7 @@ html {
   --white: #ffffff;
   --purple:#25054D;
   --blue: #2AF6FF;
-  --darkBlue: #44B4EE;
+  --darkblue: #44B4EE;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -391,14 +391,57 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+nav ul li a:link, nav ul li a:visited {
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+nav ul li a:hover, nav ul li a:active {
+  color: #44B4EE;
+  text-decoration: underline;
+}
+nav ul #trial {
+  margin-left: auto;
+  padding: 13px 2px;
+  border-radius: 6px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+nav ul #trial:hover {
+  color: white;
+  background-color: #23526a;
+}
+nav ul #selected {
+  color: #44B4EE;
+}
+
 /* =============
     Header
 ============= */
-header nav ul #trial a {
-  background-color: var(--blue);
-  color: var(--white);
-  padding: 15px 30px;
-  border-radius: 5px;
+header {
+  padding: 28px;
+  margin-top: 50px;
 }
 
 /* =============
