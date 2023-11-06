@@ -14,8 +14,8 @@ html {
   --black: #000000;
   --white: #ffffff;
   --purple:#25054D;
-  --blue: #2AF6FF;
-  --darkblue: #44B4EE;
+  --lightblue: #2AF6FF;
+  --blue: #44B4EE;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -337,6 +337,31 @@ template {
 body {
   background-color: var(--purple);
 }
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1140px auto;
+  grid-template-columns: auto 1140px auto;
+      grid-template-areas: ". main-grid-item .";
+}
+body main #main-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-grid-item;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+#valid-btn {
+  text-align: center;
+  margin-top: 25px;
+}
 
 /* =============
     Typography
@@ -366,6 +391,9 @@ ul {
   color: var(--white);
   padding: 15px 30px;
   border-radius: 5px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border: none;
 }
 
 /* =============
@@ -393,6 +421,7 @@ textarea {
 ============= */
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 nav ul {
@@ -402,6 +431,9 @@ nav ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 nav ul li {
   list-style: none;
@@ -417,23 +449,16 @@ nav ul li a:link, nav ul li a:visited {
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
-nav ul li a:hover, nav ul li a:active {
-  color: #44B4EE;
-  text-decoration: underline;
-}
 nav ul #trial {
   margin-left: auto;
-  padding: 13px 2px;
-  border-radius: 6px;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
+  padding: 1px 2px;
 }
-nav ul #trial:hover {
-  color: white;
-  background-color: #23526a;
+nav ul a:hover, nav ul a:active {
+  color: var(--lightblue);
+  background-color: var(--lightblue);
 }
 nav ul #selected {
-  color: #44B4EE;
+  color: var(--lightblue);
 }
 
 /* =============
@@ -441,7 +466,19 @@ nav ul #selected {
 ============= */
 header {
   padding: 28px;
-  margin-top: 50px;
+  margin-top: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% auto;
+  grid-template-columns: 35% auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header #logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* =============
@@ -450,6 +487,34 @@ header {
 /* =============
     Hero
 ============= */
-#hero {
-  padding-top: 78px;
+#hero-text {
+  margin-top: 78px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 32% auto;
+  grid-template-columns: 32% auto;
+}
+#hero-text section h1 {
+  font-size: 3.125rem;
+  color: white;
+  padding-left: 35px;
+}
+#hero-text section p {
+  margin-top: 20px;
+  color: white;
+  padding-left: 35px;
+}
+#hero-text section #blue-btn {
+  padding-left: 35px;
+  padding-top: 35px;
+}
+#hero-text section a:hover, #hero-text section a:active {
+  color: var(--lightblue);
+  background-color: var(--lightblue);
+}
+
+aside img {
+  width: 100%;
+  margin-top: -90px;
+  margin-left: 50px;
 }

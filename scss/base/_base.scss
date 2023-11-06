@@ -1,7 +1,32 @@
 /* =============
     Base
 ============= */
+
 body{
     background-color: var(--purple);
+
+    main{
+        display: grid;
+        grid-template-columns: auto 1140px auto;
+        grid-template-areas: ". main-grid-item .";
+        #main-grid-item{
+            grid-area: main-grid-item
+
+        }
+    }
+
 }
 
+ 
+ul{
+    margin: 0;
+    padding: 0;
+    li{
+        list-style: none;
+    }
+}  
+
+#valid-btn{
+    text-align: center;
+    margin-top: 25px;
+}   

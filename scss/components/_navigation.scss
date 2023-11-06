@@ -3,14 +3,16 @@
 ============= */
 a{
     text-decoration: none;
+    display: inline-block;
 }
 
-nav{
-    
+nav{ 
     ul{
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         li{
+    
             list-style: none;
             margin-left: 25px;
             justify-content: center;
@@ -21,26 +23,22 @@ nav{
                 transition: 0.25s;
             }
             a:hover,a:active{
-                color: #44B4EE;
-                text-decoration: underline;
+                
             }
         
         }
         #trial{
             margin-left: auto;
-            padding: 13px 2px;
-            border-radius: 6px;
-            transition: 0.25s;
-
+            padding: 1px 2px;
         }
 
-        #trial:hover{
-            color: white;
-            background-color: #23526a;
+        a:hover,a:active{
+            color: var(--lightblue);
+            background-color: var(--lightblue);
         }
 
         #selected{
-            color: #44B4EE;
+            color: var(--lightblue);
         }
 
       } 

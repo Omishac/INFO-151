@@ -3,7 +3,18 @@
 ============= */
 header{
     padding: 28px;
-    margin-top: 50px;
+    margin-top: 5px;
+    
+    display: grid;
+    grid-template-columns:  35% auto;
+    align-items: center;
 
+    #logo-container{
 
+        display: flex;
+
+    }
+
+   
 }
+  
