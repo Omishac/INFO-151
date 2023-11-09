@@ -13,7 +13,7 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
-  --purple:#25054D;
+  --purple:#6A2CC4;
   --lightblue: #2AF6FF;
   --blue: #44B4EE;
 }
@@ -336,6 +336,7 @@ template {
 ============= */
 body {
   background-color: var(--purple);
+  font-family: "Times New Roman", Times, serif;
 }
 body main {
   display: -ms-grid;
@@ -351,7 +352,7 @@ body main #main-grid-item {
 }
 
 ul {
-  margin: 0;
+  margin: 12;
   padding: 0;
 }
 ul li {
@@ -437,7 +438,7 @@ nav ul {
 }
 nav ul li {
   list-style: none;
-  margin-left: 25px;
+  margin-left: 60px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -515,6 +516,6 @@ header #logo-container {
 
 aside img {
   width: 100%;
-  margin-top: -90px;
+  margin-top: -50px;
   margin-left: 50px;
 }

@@ -4,6 +4,7 @@
 
 body{
     background-color: var(--purple);
+    font-family:'Times New Roman', Times, serif;
 
     main{
         display: grid;
@@ -19,7 +20,7 @@ body{
 
  
 ul{
-    margin: 0;
+    margin: 12;
     padding: 0;
     li{
         list-style: none;
