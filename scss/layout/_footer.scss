@@ -61,28 +61,21 @@ footer{
    }
 
    
-   
-    
-   #footer-bottom{
+#footer-bottom{
+    margin-left: 2000px;
+    display: flex;
+    justify-content: flex-end;
     background-color: var(--black);
     padding: 27px 0;
-   
-
-    #footer-botton-grid-items{
-        margin-top: 300px;
-
-        p{
-            margin-top: 100px;
-        }
-
-    }
-
-   }
+    
+}
    
    ul{
     li{
         list-style: none;
+        display: inline-block;
         img{
+            display: inline-block;
             height: 2em;
         }
        
