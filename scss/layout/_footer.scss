@@ -3,18 +3,88 @@
 ============= */
 footer{
    background-color: var(--black);
+   color: var(--white);
    padding: 30px 15px;
    display: flex;
    text-decoration: none;
-   
-    .footer{
-        flex-direction: row;
-        margin-right: 200px;
+
+   #footer-head{
+    
+
+    
+    #footer-top-grid-item{
+        grid-area: ftgi;
+
+        display: grid;
+        grid-template-columns 30% 25% 25% auto ;
+
+        ul{
+            text-decoration: none;
+            li{
+                text-decoration: none;
+                list-style: none;
+            }
+        }
+        h2{
+            margin-bottom: 30px;
+        }
+       }
+    
+       #newsletter{
+        form{
+            display: inline-block;
+            input{
+                border: 1px solid #ffffff50;
+                border-right: none;
+                background-color: var(--black);
+                padding: 13px 3px;
+                border-radius: 5px 0px 0px 5px;
+            }
+            button{
+                color: var(--white);
+                background-color: var(--lightblue);
+                padding: 15px 30px;
+                margin-left: -3px;
+                border-radius: 0 5px 5px 0;
+            }
+        }
+        }
+
     }
+    
+   }
+
+   hr{
+    border:none;
+    background-color: var(--white);
+    height: 1px;
+   }
+
+   
+   
+    
+   #footer-bottom{
+    background-color: var(--black);
+    padding: 27px 0;
+   
+
+    #footer-botton-grid-items{
+        margin-top: 300px;
+
+        p{
+            margin-top: 100px;
+        }
+
+    }
+
+   }
+   
    ul{
     li{
+        list-style: none;
+        img{
+            height: 2em;
+        }
        
     }
    }
-   
-}

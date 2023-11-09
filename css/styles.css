@@ -397,16 +397,50 @@ header {
 ============= */
 footer {
   background-color: var(--black);
+  color: var(--white);
   padding: 30px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
 }
-footer .footer {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-right: 200px;
+footer #footer-head #footer-top-grid-item {
+  grid-area: ftgi;
+}
+footer #footer-head #footer-top-grid-item h2 {
+  margin-bottom: 30px;
+}
+footer #footer-head #newsletter form {
+  display: inline-block;
+}
+footer #footer-head #newsletter form input {
+  border: 1px solid rgba(255, 255, 255, 0.3137254902);
+  border-right: none;
+  background-color: var(--black);
+  padding: 13px 3px;
+  border-radius: 5px 0px 0px 5px;
+}
+footer #footer-head #newsletter form button {
+  color: var(--white);
+  background-color: var(--lightblue);
+  padding: 15px 30px;
+  margin-left: -3px;
+  border-radius: 0 5px 5px 0;
+}
+
+hr {
+  border: none;
+  background-color: var(--white);
+  height: 1px;
+}
+
+#footer-bottom {
+  background-color: var(--black);
+  padding: 27px 0;
+}
+ul li {
+  list-style: none;
+}
+ul li img {
+  height: 2em;
 }
