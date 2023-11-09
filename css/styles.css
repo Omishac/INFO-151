@@ -332,12 +332,54 @@ template {
     Base
 ============= */
 #validation-logo {
-  margin-top: 60px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+#plans-header {
+  background-color: white;
+}
+#plans-header img {
+  border: none;
+  background-color: white;
+}
+#plans-header h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+#plans-header p {
+  text-align: center;
+}
+
+#plan-cards {
+  text-align: center;
+  background-color: white;
+}
+#plan-cards img {
+  border: none;
+  background-color: white;
+}
+
+img {
+  border: none;
+  background-color: white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
 }
 
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Inter", sans-serif;
+}
+
 /* =============
     Buttons
 ============= */
