@@ -387,6 +387,11 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  padding: 28px;
+  margin-top: 50px;
+}
+
 /* =============
     Footer
 ============= */
