@@ -361,20 +361,6 @@ textarea {
   -webkit-appearance: none;
 }
 
-#center{
-  text-align: center;
-    img{
-      display: flex;
-      padding: 100px;
-      margin:100px;
-    }
-}
-
-h1{
-  text-align: center;
-  padding-top: 30px;
-}
-
 /* =============
     Navigation
 ============= */
