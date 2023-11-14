@@ -2,82 +2,100 @@
     Footer
 ============= */
 footer{
-   background-color: var(--black);
-   color: var(--white);
-   padding: 30px 15px;
-   display: flex;
-   text-decoration: none;
+   color: grey;
 
    #footer-head{
-    
-
+    background-color: var(--black);
+    color: grey;
+    padding: 30px 15px;
+    display: grid;
+    grid-template-columns: auto 1140px auto;
+    grid-template-areas: ". ftgi .";
     
     #footer-top-grid-item{
+        color: white;
         grid-area: ftgi;
-
         display: grid;
-        grid-template-columns 30% 25% 25% auto ;
+        grid-template-columns: 40% 20% 20% auto;
 
-        ul{
-            text-decoration: none;
-            li{
-                text-decoration: none;
-                list-style: none;
-            }
-        }
-        h2{
-            margin-bottom: 30px;
-        }
-       }
-    
-       #newsletter{
-        form{
-            display: inline-block;
-            input{
-                border: 1px solid #ffffff50;
-                border-right: none;
-                background-color: var(--black);
-                padding: 13px 3px;
-                border-radius: 5px 0px 0px 5px;
-            }
-            button{
-                color: var(--white);
-                background-color: var(--lightblue);
-                padding: 15px 30px;
-                margin-left: -3px;
-                border-radius: 0 5px 5px 0;
-            }
-        }
+        p{
+            color: grey;
         }
 
+        section{
+            #social-links{
+                margin-top: 20px;
+                display: flex;
+                li{
+                    color: grey;
+                    margin-right: 16px;
+
+                    img{
+                        height: 25px;
+                        width: 25px;
+                    }
+
+                    a:link, a:visted{
+                        color: var(--white);
+                        border: 1px solid var(--blue);
+                        border-radius: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: 0.20s;
+                    }
+
+                    a:hover, a:active{
+                        color: grey;
+                        background-color: var(--lightblue);
+                        border: 1px solid var(--blue)
+                    }
+                }
+            }
+            p{
+                padding-right: 105px;
+            }
+            
+            h1{
+                margin-bottom: 20px;
+
+            }
+            h2{
+                margin-bottom: 20px;
+                font-weight:500;
+                font-size: rem-calc(18);
+            }
+            a:link, a:visted{
+                color: white;
+                margin-bottom: 12px;
+            }
+            a:hover,a:active{
+                color: var(--blue);
+            }
+        }
     }
-    
-   }
-
-   hr{
-    border:none;
-    background-color: var(--white);
-    height: 1px;
-   }
+  }
+}
 
    
 #footer-bottom{
-    margin-left: 2000px;
-    display: flex;
-    justify-content: flex-end;
     background-color: var(--black);
     padding: 27px 0;
+    display: grid;
+    grid-template-columns: auto 1140px auto;
+    grid-template-areas: ". fbgi .";
+
+
+
+    #footer-bottom-grid-item{
+        grid-area: fbgi;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     p{
+        color: grey;
+        text-align: center; 
+    }
+}
     
 }
-   
-   ul{
-    li{
-        list-style: none;
-        display: inline-block;
-        img{
-            display: inline-block;
-            height: 2em;
-        }
-       
-    }
-   }
