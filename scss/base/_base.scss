@@ -2,6 +2,11 @@
     Base
 ============= */
 
-#validation-btn{
+#validation-btn {
     text-align: center;
+    display: block; /* Ensure it's a block-level element */
+}
+
+#validation-btn a {
+    display: inline-block; /* Ensure the anchor is a block-level element */
 }
