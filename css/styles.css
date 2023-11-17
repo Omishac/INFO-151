@@ -364,6 +364,40 @@ p {
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.bluebtn {
+  padding: 16px 24px;
+  background-color: #024A58;
+  color: white;
+  border-radius: 6px;
+}
+
+.bluebtn:hover {
+  border: 1px solid #024A58;
+  background-color: white;
+  color: #024A58;
+}
+
+.whitebtn {
+  border: 1px solid #024A58;
+  padding: 16px 24px;
+  background-color: white;
+  color: #024A58;
+  border-radius: 6px;
+}
+
+.whitebtn:hover {
+  background-color: black;
+  color: white;
+}
+
 /* =============
     Forms
 ============= */
@@ -387,37 +421,31 @@ textarea {
 /* =============
     Navigation
 ============= */
+.showMainNav {
+  display: block !important;
+}
+
+.showSignIn {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 a {
   text-decoration: none;
 }
 
-nav {
+#mainNav {
   display: none;
 }
 @media (min-width: 1200px) {
-  nav {
-    border: none;
-    display: block;
-  }
-}
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-@media (min-width: 1200px) {
-  nav ul {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  #mainNav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -427,82 +455,116 @@ nav ul {
     height: 100%;
   }
 }
+#mainNav ul li {
+  border-bottom: 1px solid gray;
+  text-align: right;
+}
 @media (min-width: 1200px) {
-  nav ul li {
-    height: 100%;
+  #mainNav ul li {
+    border: none;
+    text-align: center;
   }
 }
-nav ul li a:link, nav ul li a:visited {
-  padding: 15px;
+#mainNav ul li a:link, #mainNav ul li a:visited {
+  padding: 24px;
   display: inline-block;
-  margin-bottom: 10px;
+  width: 100%;
   color: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 @media (min-width: 1200px) {
-  nav ul li a:link, nav ul li a:visited {
-    height: 100%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding: 12px;
+  #mainNav ul li a:link, #mainNav ul li a:visited {
+    padding-bottom: 0px;
     margin-bottom: 0px;
   }
 }
-nav ul li a:hover, nav ul li a:active {
+#mainNav ul li a:hover, #mainNav ul li a:active {
   color: grey;
-}
-nav ul li .loginSign-btn {
-  background-color: #024A58;
-  color: white;
-  border-radius: 6px;
-  padding: 12px;
-  font-weight: 400;
-  border: none;
-  cursor: pointer;
-}
-nav ul li .loginSign-btn:hover {
-  background-color: white;
-  color: #024A58;
 }
 
 /* =============
     Header
 ============= */
 header {
-  padding: 22.5px 36px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% auto 10%;
-  grid-template-columns: 50% auto 10%;
-      grid-template-areas: "logo . burger" "nav nav nav";
+  -ms-grid-columns: 50% auto;
+  grid-template-columns: 50% auto;
+      grid-template-areas: "logo  burger" "nav  nav" "signIn  signIn";
+  height: 100%;
 }
 @media (min-width: 768px) {
   header {
-    -ms-grid-columns: 50% auto 4%;
-    grid-template-columns: 50% auto 4%;
+    -ms-grid-columns: 40% 50% auto;
+    grid-template-columns: 40% 50% auto;
+        grid-template-areas: "logo signIn burger" "nav nav nav";
   }
 }
 @media (min-width: 1200px) {
   header {
-    -ms-grid-columns: 25% 25% auto;
-    grid-template-columns: 25% 25% auto;
-        grid-template-areas: "logo . nav";
+    -ms-grid-columns: 25% auto 25%;
+    grid-template-columns: 25% auto 25%;
+        grid-template-areas: "logo nav singIn";
   }
 }
 header #logo-container {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  grid-area: logo;
+  padding: 24px 0px 0px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  grid-area: logo;
   height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+header #mainNav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+}
+header #signIn {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  display: none;
+  grid-area: signIn;
+  padding: 21px 24px;
+}
+@media (min-width: 768px) {
+  header #signIn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 24px 0px 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+@media (min-width: 1200px) {
+  header #signIn {
+    padding-right: 24px;
+  }
+}
+header #signIn button {
+  margin-left: 16px;
 }
 header #burger-container {
   -ms-grid-row: 1;
-  -ms-grid-column: 3;
+  -ms-grid-column: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -513,36 +575,50 @@ header #burger-container {
       -ms-flex-align: center;
           align-items: center;
   grid-area: burger;
+  padding-top: 24px;
+  padding-right: 24px;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-@media (min-width: 1200px) {
-  header #burger-container {
-    display: none;
+@media (min-width: 768px) {
+  header #logo-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
   }
-}
-header nav {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  margin-top: 0px;
-  padding-top: 0px;
-  border-top: 1px solid gray;
-  grid-area: nav;
+  header #mainNav {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  header #signIn {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+  header #burger-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
 }
 @media (min-width: 1200px) {
   header #logo-container {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
-  header nav {
+  header #mainNav {
     -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
     -ms-grid-column-span: 1;
   }
 }
 @media (min-width: 1200px) {
-  header nav {
-    border: none;
+  header #burger-container {
+    display: none;
   }
+}
+header #burger-container button {
+  color: black;
 }
 
 /* =============

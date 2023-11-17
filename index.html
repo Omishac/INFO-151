@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/06833c5ef9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
-    <title>Week 7 - Step 1 - Navigation </title>
+    <title>Week 7 - Navigation </title>
 </head>
 
 <body>
@@ -14,18 +14,26 @@
         <section id="logo-container">
             <img src="img/LogoComponents.svg" alt="logo">
         </section>
-        <section id="burger-container">
-            <i class="fa-solid fa-bars"></i>
-        </section>
-        <nav>
+
+        <nav id="mainNav" class="showMainNav">
             <ul>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Impact</a></li>
                 <li><a href="#">Location</a></li>
-                <li> <button class="loginSign-btn"> Login/Signup </button> </li>
             </ul>
         </nav>
+
+        <section id="signIn">
+            <button class="bluebtn">Sign In</button>
+            <button class="whitebtn">Sign Up</button>
+        </section>
+        
+
+        <section id="burger-container">
+            <button><i class="fa-solid fa-bars"></i></button>
+        </section>
+        
     </header>
     
 

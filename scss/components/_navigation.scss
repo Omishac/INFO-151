@@ -1,47 +1,53 @@
 /* =============
     Navigation
 ============= */
+
+.showMainNav{
+    display: block !important;
+}
+
+.showSignIn{
+    display: flex !important;
+    justify-content: flex-end;
+}
+
+
 a{
     text-decoration: none;
 }
 
-nav{    
-
+#mainNav{    
+    
     display: none;
 
-    @include xl{
-        border: none;
-        display: block;
-    }
 
     ul{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-
+        
         @include xl{
-            flex-direction: row;
+            display: flex;
             justify-content: flex-end;
             align-items: center;
             height: 100%;
         }
 
         li{
+            border-bottom: 1px solid gray;
+            text-align: right;
 
             @include xl{
-                height: 100%;
+                border: none;
+                text-align: center;
             }
 
             a:link, a:visited{
-                padding: 15px;
+                padding: 24px;
                 display: inline-block;
-                margin-bottom: 10px;
+                width: 100%;
                 color: black;
+                box-sizing: border-box;
 
                 @include xl{
-                    height: 100%;
-                    box-sizing: border-box;
-                    padding: 12px;
+                    padding-bottom: 0px;
                     margin-bottom: 0px;
                 }
 
@@ -51,20 +57,9 @@ nav{
                 color: grey;
             }
 
-            .loginSign-btn{
-                background-color: #024A58;
-                color: white;
-                border-radius: 6px;
-                padding: 12px;
-                font-weight:400;
-                border: none;
-                cursor: pointer;
-            }
 
-            .loginSign-btn:hover{
-                background-color: white;
-                color:#024A58;
-            }
         }
     }
+
+    
 }

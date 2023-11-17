@@ -2,27 +2,69 @@
     Header
 ============= */
  header{
-    padding: 22.5px 36px;
+
+
     display: grid;
-    grid-template-columns: 50% auto 10%;
-    grid-template-areas: "logo . burger"
-    "nav nav nav";
+    grid-template-columns:  50% auto;
+    grid-template-areas: 
+    "logo  burger"
+    "nav  nav"
+    "signIn  signIn";
+    height: 100%;
  
     @include md{
-        grid-template-columns: 50% auto 4%;
+        grid-template-columns: 40% 50% auto;
+        grid-template-areas: 
+        "logo signIn burger"
+        "nav nav nav";
     }
 
     @include xl{
-        grid-template-columns: 25% 25% auto;
-        grid-template-areas: "logo . nav"
+       
+        grid-template-columns: 25% auto 25%;
+        grid-template-areas:
+         "logo nav singIn";
+        
     }
 
     #logo-container{
+        grid-area: logo;
+        padding: 24px 0px 0px 24px;
         display: flex;
         align-items: center;
-        grid-area: logo;
         height: 100%;
+        box-sizing: border-box;
 
+    }
+
+    #mainNav{
+        grid-area: nav;
+    }
+
+    #signIn{
+
+        display: none;
+        grid-area: signIn;
+
+        padding: 21px 24px;
+        @include md{
+            display: flex;
+            justify-content: flex-end;
+            padding: 24px 0px 0px;
+            align-items: center;
+            height: 100%;
+            box-sizing: border-box;
+
+        }
+
+        @include xl{
+
+            padding-right: 24px;
+        }
+
+        button{
+            margin-left: 16px;
+        }
     }
 
     #burger-container{
@@ -30,20 +72,16 @@
         justify-content: flex-end;
         align-items: center;
         grid-area: burger;
+        padding-top: 24px;
+        padding-right: 24px;
+        height: 100%;
+        box-sizing: border-box;
 
         @include xl{
             display: none;
         }
-    }
-
-    nav{
-        margin-top: 0px;
-        padding-top: 0px;
-        border-top: 1px solid gray;
-        grid-area: nav;
-        
-        @include xl{
-            border: none;
+        button{
+            color: black;
         }
     }
  }
