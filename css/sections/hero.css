@@ -1,9 +1,2 @@
-/* =============
-    Hero
-============= */
 #Hero {
-  background-image: url("/Users/omisha/GitHub/INFO-151/INFO-151/img/hero.jpeg");
   background-position: center;
-  background-size: cover;
-  height: 70vh;
-}

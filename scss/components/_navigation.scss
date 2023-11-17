@@ -5,17 +5,45 @@ a{
     text-decoration: none;
 }
 
-nav{
+nav{    
+
+    display: none;
+
+    @include xl{
+        border: none;
+        display: block;
+    }
+
     ul{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+
+        @include xl{
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+        }
+
         li{
+
+            @include xl{
+                height: 100%;
+            }
+
             a:link, a:visited{
                 padding: 15px;
                 display: inline-block;
                 margin-bottom: 10px;
                 color: black;
+
+                @include xl{
+                    height: 100%;
+                    box-sizing: border-box;
+                    padding: 12px;
+                    margin-bottom: 0px;
+                }
 
             }
             

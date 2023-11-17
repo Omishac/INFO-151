@@ -8,12 +8,21 @@
     grid-template-areas: "logo . burger"
     "nav nav nav";
  
+    @include md{
+        grid-template-columns: 50% auto 4%;
+    }
 
+    @include xl{
+        grid-template-columns: 25% 25% auto;
+        grid-template-areas: "logo . nav"
+    }
 
     #logo-container{
         display: flex;
         align-items: center;
         grid-area: logo;
+        height: 100%;
+
     }
 
     #burger-container{
@@ -21,12 +30,20 @@
         justify-content: flex-end;
         align-items: center;
         grid-area: burger;
+
+        @include xl{
+            display: none;
+        }
     }
 
     nav{
-        margin-top: 10px;
-        padding-top: 15px;
+        margin-top: 0px;
+        padding-top: 0px;
         border-top: 1px solid gray;
         grid-area: nav;
+        
+        @include xl{
+            border: none;
+        }
     }
  }

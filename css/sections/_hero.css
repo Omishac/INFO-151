@@ -2,7 +2,7 @@
     Hero
 ============= */
 #hero {
-  background-image: url("../img/heros.jpg");
+  background-image: url("../img/heros.png");
   background-position: center;
   background-size: cover;
   height: 70vh;
