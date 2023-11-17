@@ -1,3 +1,42 @@
 /* =============
     Navigation
 ============= */
+a{
+    text-decoration: none;
+}
+
+nav{
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        li{
+            a:link, a:visited{
+                padding: 15px;
+                display: inline-block;
+                margin-bottom: 10px;
+                color: black;
+
+            }
+            
+            a:hover, a:active{
+                color: grey;
+            }
+
+            .loginSign-btn{
+                background-color: #024A58;
+                color: white;
+                border-radius: 6px;
+                padding: 12px;
+                font-weight:400;
+                border: none;
+                cursor: pointer;
+            }
+
+            .loginSign-btn:hover{
+                background-color: white;
+                color:#024A58;
+            }
+        }
+    }
+}
