@@ -385,7 +385,7 @@ button {
   color: #024A58;
 }
 
-.whitebtn {
+.white-btn {
   border: 1px solid #024A58;
   padding: 16px 24px;
   background-color: white;
@@ -393,8 +393,25 @@ button {
   border-radius: 6px;
 }
 
-.whitebtn:hover {
-  background-color: black;
+.white-btn:hover {
+  background-color: yellowgreen;
+  color: white;
+}
+
+.close-btn {
+  background-color: aqua;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
 }
 
@@ -438,9 +455,6 @@ a {
   text-decoration: none;
 }
 
-#mainNav {
-  display: none;
-}
 @media (min-width: 1200px) {
   #mainNav ul {
     display: -webkit-box;
@@ -631,5 +645,66 @@ header #burger-container button {
   background-image: url("../img/hero.png");
   background-position: center;
   background-size: cover;
-  height: 75vh;
+  height: 200vh;
+}
+
+#sign-in-container {
+  background-color: rgba(0, 128, 0, 0.4509803922);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 16px;
+  position: fixed;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  display: none;
+}
+#sign-in-container form {
+  background-color: rgba(0, 128, 0, 0.8);
+  padding: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+}
+#sign-in-container form #close-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 24px;
+}
+#sign-in-container form input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 60px;
+  margin-bottom: 24px;
+  border: none;
+  border-radius: 8px;
+}
+#sign-in-container form #sign-in-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+#sign-in-container form #sign-in-button-container button {
+  background-color: yellow;
+  color: green;
+  border: 1px solid green;
 }

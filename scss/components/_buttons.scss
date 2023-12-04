@@ -24,7 +24,7 @@ button{
     color: #024A58;
 }
 
-.whitebtn{
+.white-btn{
     border: 1px solid #024A58;
     padding: 16px 24px;
     background-color: white;
@@ -32,8 +32,19 @@ button{
     border-radius: 6px;
 }
 
-.whitebtn:hover{
-    background-color: black;
+.white-btn:hover{
+    background-color: yellowgreen;
     color: white;
 }
 
+
+.close-btn{
+    background-color: aqua;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
