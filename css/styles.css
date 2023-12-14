@@ -331,6 +331,20 @@ template {
 /* =============
     Base
 ============= */
+.show-signUp-container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.hide-burger-x {
+  display: none;
+}
+
+.hide-burger-bars {
+  display: none;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -398,6 +412,23 @@ button {
   color: white;
 }
 
+.close-btn {
+  background-color: blue;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
 /* =============
     Forms
 ============= */
@@ -440,6 +471,11 @@ a {
 
 #mainNav {
   display: none;
+}
+@media (min-width: 1200px) {
+  #mainNav {
+    display: block;
+  }
 }
 @media (min-width: 1200px) {
   #mainNav ul {
@@ -632,4 +668,54 @@ header #burger-container button {
   background-position: center;
   background-size: cover;
   height: 75vh;
+}
+
+#sign-up-container {
+  background-color: rgba(0, 128, 0, 0.5843137255);
+  height: 100vh;
+  padding: 16px;
+  position: fixed;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  display: none;
+}
+#sign-up-container form #close-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 24px;
+}
+#sign-up-container form input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 60px;
+  margin-bottom: 24px;
+  border: none;
+  border-radius: 8px;
+}
+#sign-up-container form #sign-up-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+#sign-up-container form #sign-up-button-container button {
+  background-color: lightblue;
+  color: white;
+  border: 1px solid white;
+  margin-left: 10px;
 }

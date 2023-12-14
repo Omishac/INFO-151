@@ -1,0 +1,56 @@
+
+
+
+#sign-up-container{
+    
+
+
+    background-color: #00800095;
+    height: 100vh;
+
+    padding: 16px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+
+    display: none;
+
+       
+    form{
+
+        #close-button-container{
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 24px;
+        }
+
+        input{
+            width: 100%;
+            box-sizing: border-box;
+            height: 60px;
+            margin-bottom: 24px;
+            border: none;
+            border-radius: 8px;
+        }
+
+
+        #sign-up-button-container{
+
+            display: flex;
+            justify-content: flex-end;
+
+
+            button{
+                background-color: lightblue;
+                color: white;
+                border: 1px solid white;
+                margin-left: 10px;
+            }
+        }    
+    }
+}

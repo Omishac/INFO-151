@@ -9,7 +9,33 @@
     <title>Week 7 - Navigation </title>
 </head>
 
+
+
+
+
 <body>
+
+    <section id="sign-up-container">
+
+        <form action="#">
+            <div id="close-button-container">
+                <button class="close-btn" id="close-signup-modal-btn"><i class="fa-solid fa-xmark"></i></button>  
+            </div>
+            <input type="text" placeholder="user name">
+            <input type="text" placeholder="user name">
+            <input type="text" placeholder="user name">
+
+            <div id="sign-up-button-container">
+                <button class="whitebtn">Sign Up</button>
+                <button class="whitebtn">Cancel</button>
+            </div>
+
+        </form>
+    </section>
+
+
+
+
     <header>
         <section id="logo-container">
             <img src="img/LogoComponents.svg" alt="logo">
@@ -26,12 +52,16 @@
 
         <section id="signIn">
             <button class="bluebtn">Sign In</button>
-            <button class="whitebtn">Sign Up</button>
+            <button class="whitebtn" id="sign-up-btn">Sign Up</button>
         </section>
         
 
         <section id="burger-container">
-            <button><i class="fa-solid fa-bars"></i></button>
+            <button>
+                <i class="fa-solid fa-bars" id="burger-bars"></i>
+                <i class="fa-solid fa-xmark hide-burger-x" id="burger-x"></i>
+            </button>
+            
         </section>
         
     </header>
