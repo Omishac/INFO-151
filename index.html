@@ -5,8 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/06833c5ef9.js" crossorigin="anonymous"></script>
+
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+
+
     <link rel="stylesheet" href="css/styles.css">
-    <title>Week 7 - Navigation </title>
+
+
+    <title>Week 10 - FancyApps </title>
 </head>
 
 
@@ -71,16 +84,81 @@
     </header>
     
 
-    <section id="hero">
-    
+    <section id="hero"></section>
 
+    <section id="fancybox">
+        <div id="fb-grid-item">
+            <h1>Fancybox</h1>
+              
+            <ul>
+                <li>                                              
+                    <a href="img/fancy1.jpg" data-fancybox="gallery-1" data-caption="canyon"><img src="img/fancy1.jpg" alt="canyon"></a>
+                </li>
+
+                <li>
+                    <a href="img/fancy2.jpg" data-fancybox="gallery-1"><img src="img/fancy2.jpg" alt="water"></a>
+                </li>
+
+                <li>
+                    <a href="img/fancy3.jpg" data-fancybox="gallery-1"><img src="img/fancy3.jpg" alt="under water"></a>
+                </li>
+
+                <li>
+                    <a href="img/fancy4.jpg" data-fancybox="gallery-1"><img src="img/fancy4.jpg" alt="desert"></a>
+                </li>
+            </ul>
+        </div>
     </section>
+
+    <section id="fancyCarousel">
+        <div id="fc-grid-item">
+            <h1>Fancy Carousel</h1>
+            <div class="f-carousel" id="myCarousel">
+                
+
+                <div class="f-carousel__slide"><div id="fc-1" class="slide"></div></div>
+                <div class="f-carousel__slide"><div id="fc-2" class="slide"></div></div>
+                <div class="f-carousel__slide"><div id="fc-3" class="slide"></div></div>
+                <div class="f-carousel__slide"><div id="fc-4" class="slide"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="AOS">
+        <div id="AOS-grid-item">
+            <h1>AOS</h1>
+            <div class="AOS" id="AOSscrolll">
+                    <div class="card" data-aos="flip-left" data-aos-delay="50" data-aos-duration="1000">
+                        <img src="img/fancy4.jpg" alt="">
+                    </div>
+                    <div class="card" data-aos="flip-right" data-aos-delay="50" data-aos-duration="1000">
+                        <img src="img/fancy3.jpg" alt="">
+                    </div>
+                    <div class="card" data-aos="flip-right" data-aos-delay="50" data-aos-duration="1000">
+                        <img src="img/fancy2.jpg" alt="">
+                    </div>
+                    <div class="card" data-aos="flip-left" data-aos-delay="50" data-aos-duration="1000">
+                        <img src="img/fancy1.jpg" alt="">
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
 
     <div id="validation-btn">
         <a href="https://validator.w3.org/nu/?doc=https://week-7-step4-js--info151-oc86.netlify.app/" target="_blank">
             <img src="img/html-logo.svg" alt="Valid">
         </a>
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
     <script src="js/scripts-dist.js"></script>
     
